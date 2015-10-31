@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Game_eventos</name>
     <events>
         <variable constant="0" name="HeightTrees" sid="8811676901701748" static="0" type="number">1</variable>
         <variable constant="0" name="Spawn" sid="4753324415822856" static="0" type="number">5</variable>
@@ -101,6 +101,9 @@
                                     <param id="0" name="Instance variable">Speed</param>
                                     <param id="1" name="Value">80</param>
                                 </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="2882101887581693" type="Enemy">
+                                    <param id="0" name="Speed">Enemy.Speed</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9513816811674768">
@@ -125,6 +128,9 @@
                                     <param id="0" name="Instance variable">Speed</param>
                                     <param id="1" name="Value">80</param>
                                 </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="1307913562914352" type="Enemy">
+                                    <param id="0" name="Speed">Enemy.Speed</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9090165657922147">
@@ -133,20 +139,23 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="4828442544343496" type="Enemy">
-                                    <param id="0" name="Animation">&quot;Trator&quot;</param>
+                                    <param id="0" name="Animation">&quot;Motoqueiro&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="2321779621649841" type="Enemy">
                                     <param id="0" name="Instance variable">Damage</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">4</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="18965490724882" type="Enemy">
                                     <param id="0" name="Instance variable">Life</param>
-                                    <param id="1" name="Value">5</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="6719051783697564" type="Enemy">
                                     <param id="0" name="Instance variable">Speed</param>
-                                    <param id="1" name="Value">80</param>
+                                    <param id="1" name="Value">150</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="5300703592265422" type="Enemy">
+                                    <param id="0" name="Speed">Enemy.Speed</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -189,6 +198,9 @@
                                     <param id="0" name="Instance variable">Speed</param>
                                     <param id="1" name="Value">80</param>
                                 </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="8198437133819847" type="Enemy">
+                                    <param id="0" name="Speed">Enemy.Speed</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9209131658239007">
@@ -213,6 +225,9 @@
                                     <param id="0" name="Instance variable">Speed</param>
                                     <param id="1" name="Value">80</param>
                                 </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="8786578481769431" type="Enemy">
+                                    <param id="0" name="Speed">Enemy.Speed</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="6576867398102128">
@@ -221,20 +236,23 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="2373684791535898" type="Enemy">
-                                    <param id="0" name="Animation">&quot;Trator&quot;</param>
+                                    <param id="0" name="Animation">&quot;Motoqueiro&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="3485219816211089" type="Enemy">
                                     <param id="0" name="Instance variable">Speed</param>
-                                    <param id="1" name="Value">80</param>
+                                    <param id="1" name="Value">150</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="388127072408915" type="Enemy">
                                     <param id="0" name="Instance variable">Damage</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">4</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="4879162957346691" type="Enemy">
                                     <param id="0" name="Instance variable">Life</param>
-                                    <param id="1" name="Value">5</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="7198527020109024" type="Enemy">
+                                    <param id="0" name="Speed">Enemy.Speed</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -498,10 +516,6 @@
                     <param id="1" name="Speed">200</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="7349714935036949" type="Upgrade">
-                    <param id="0" name="Pin to">Sprite</param>
-                    <param id="1" name="Mode">1</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="2934439314838755" type="Button">
                     <param id="0" name="Pin to">Sprite</param>
                     <param id="1" name="Mode">1</param>
                 </action>
