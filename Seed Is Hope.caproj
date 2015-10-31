@@ -473,7 +473,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683607970630652" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.50625" original-source="F:\Projetos\Seed Is Hope\Sprites test\multidao.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="F:\Projetos\Sprites test\multidao.png">
                         <collision-poly>
                             <point x="0.2" y="0.158416" />
                             <point x="0.5" y="0.00990099" />
