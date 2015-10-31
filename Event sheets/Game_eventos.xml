@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_eventos</name>
+    <events>
+        <variable constant="0" name="HeightTrees" sid="8811676901701748" static="0" type="number">1</variable>
+        <variable constant="0" name="Spawn" sid="4753324415822856" static="0" type="number">5</variable>
+        <variable constant="0" name="Score" sid="7618324956365982" static="0" type="number">0</variable>
+        <variable constant="0" name="Inimigo" sid="6417536749244017" static="0" type="number">0</variable>
+        <variable constant="0" name="Lado" sid="1074930927980545" static="0" type="number">0</variable>
+        <variable constant="0" name="Level" sid="3308179329907587" static="0" type="number">1</variable>
+        <event-block sid="3132747473524738">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9898554505654148" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set progress" sid="3836405689212016" type="ProgressBar">
+                    <param id="0" name="Value">Tree.Life</param>
+                </action>
+                <action id="0" name="Set text" sid="6574248362711381" type="Score">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="7946638377874168" type="Multidao">
+                    <param id="0" name="X">Tree.X</param>
+                    <param id="1" name="Y">Tree.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8598794912620284">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4502040562006981" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Enemy</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9858450570354404" type="Enemy">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="8189174796898712" type="Enemy">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7984404765635749">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8055480459075622" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1349337681910051" type="System">
+                    <param id="0" name="Variable">Lado</param>
+                    <param id="1" name="Value">floor(random(2))</param>
+                </action>
+                <action id="-9" name="Set value" sid="5346239617790566" type="System">
+                    <param id="0" name="Variable">Inimigo</param>
+                    <param id="1" name="Value">floor(random(7))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6356647823628343">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5623466439621555" type="System">
+                            <param id="0" name="Variable">Lado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7034166738720388" type="System">
+                            <param id="0" name="Object to create">Enemy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-20</param>
+                            <param id="3" name="Y">random(475,980)</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="7755554012528092" type="Enemy">
+                            <param id="0" name="X">Tree.X</param>
+                            <param id="1" name="Y">Tree.Y</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="591207771351928">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7325655294377764" type="System">
+                                    <param id="0" name="Variable">Inimigo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1465272951822886" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Lenhador&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="9996213020702779" type="Enemy">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9513816811674768">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4306824765304708" type="System" />
+                                <condition id="-14" name="Compare variable" sid="1017856999947344" type="System">
+                                    <param id="0" name="Variable">Inimigo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1882122229640363" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Incendiario&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="104476803120472" type="Enemy">
+                                    <param id="0" name="Instance variable">Damage</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5109203118910109" type="Enemy">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9090165657922147">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="628662754310296" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="4828442544343496" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Trator&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2321779621649841" type="Enemy">
+                                    <param id="0" name="Instance variable">Damage</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="18965490724882" type="Enemy">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6719051783697564" type="Enemy">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5745407044177825">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3783354617746931" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="6781530911779718" type="System">
+                            <param id="0" name="Object to create">Enemy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">1570</param>
+                            <param id="3" name="Y">random(475,980)</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="1371308351315149" type="Enemy">
+                            <param id="0" name="X">Tree.X</param>
+                            <param id="1" name="Y">Tree.Y</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="6525027561831252" type="Enemy">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2864045524679584">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2978358783925525" type="System">
+                                    <param id="0" name="Variable">Inimigo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6702099361561956" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Lenhador&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2235988512737458" type="Enemy">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9209131658239007">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8432099302736036" type="System" />
+                                <condition id="-14" name="Compare variable" sid="4013605171351987" type="System">
+                                    <param id="0" name="Variable">Inimigo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="2911045683736993" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Incendiario&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3811523237880395" type="Enemy">
+                                    <param id="0" name="Instance variable">Damage</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6096957418308932" type="Enemy">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6576867398102128">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2341477657308955" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="2373684791535898" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Trator&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3485219816211089" type="Enemy">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="388127072408915" type="Enemy">
+                                    <param id="0" name="Instance variable">Damage</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4879162957346691" type="Enemy">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8118042125886658">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8840876092059781" type="Enemy">
+                    <param id="0" name="Object">Tree</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="95163407097499" type="Enemy">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8229459550938008" type="Enemy">
+                    <param id="0" name="Instance variable">InTree</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7794188380824703">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1652064881688247" type="Enemy">
+                    <param id="0" name="Object">Multidao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="2752338494180384" type="Enemy">
+                    <param id="0" name="Speed">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7691796391572562">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="566972158330136" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="5490241864110385" type="Multidao">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">Enemy.Damage</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5904021297606823">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9093149486399136" type="Enemy">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="2403560922451528" type="Enemy">
+                    <param id="0" name="Animation">&quot;Died&quot; &amp; Enemy.AnimationName</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="9562931894765928" type="Enemy">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action behavior="DragDrop" id="0" name="Set enabled" sid="8935161329519368" type="Enemy">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="515519263738715" type="Enemy">
+                    <param id="0" name="Instance variable">InTree</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6376187961285694" type="Enemy">
+                    <param id="0" name="Animation">&quot;Died&quot; &amp; Enemy.AnimationName</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2716197008751453">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="300466734950586" type="System">
+                    <param id="0" name="Interval (seconds)">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4317737565757047" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2761144133410235" type="System">
+                    <param id="0" name="Variable">HeightTrees</param>
+                    <param id="1" name="Value">HeightTrees*0.5</param>
+                </action>
+                <action id="-7" name="Set size" sid="8853783510367968" type="Tree">
+                    <param id="0" name="Width">Tree.Width * HeightTrees</param>
+                    <param id="1" name="Height">Tree.Height * HeightTrees</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1782651783437251">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4921807741151119" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+                <condition id="-11" name="For Each" sid="442854029753955" type="System">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="3562675355453338" type="Enemy">
+                    <param id="0" name="Instance variable">InTree</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="6954152584465002" type="Tree">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">Enemy.Damage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8687168353600334">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1618848919913539" type="LAgo">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+                <condition id="2" inverted="1" name="Mouse button is down" sid="6827713480058593" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="7546735691321065" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">Enemy.Damage</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7703786620956343" type="Enemy" />
+            </actions>
+        </event-block>
+        <event-block sid="7041323485783817">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1916786207971041" type="Upgrade" />
+                <condition id="-14" name="Compare variable" sid="2050601266347941" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">Upgrade.Price</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1952801356902699" type="Upgrade">
+                    <param id="0" name="Instance variable">Upgrade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Rejuvenescer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="8548594041745804" type="Tree">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">25</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="7669712503151822" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5699407819076668">
+            <conditions>
+                <condition id="0" name="On clicked" sid="629562151334132" type="Upgrade" />
+                <condition id="-14" name="Compare variable" sid="1802313371782963" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">Upgrade.Price</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3487508441844875" type="Upgrade">
+                    <param id="0" name="Instance variable">Upgrade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Barreira&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="210419521287495" type="System">
+                    <param id="0" name="Object to create">Multidao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">1200</param>
+                    <param id="3" name="Y">200</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="5727043193157834" type="Multidao">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1545090686846791">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4730870613166038" type="Multidao">
+                    <param id="0" name="Object">Sky</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="5902920837139523" type="Multidao">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668704906652528">
+            <conditions>
+                <condition id="-22" name="Else" sid="2559555090420335" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3366111814791678" type="Multidao">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1850420041997716">
+                    <conditions>
+                        <condition id="2" inverted="1" name="Mouse button is down" sid="7486342749704958" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="6834215029165629" type="Multidao">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="6741015794429705">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6254323082114657" type="Multidao">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5607847211300141" type="Multidao" />
+                <action behavior="Bullet" id="0" name="Set speed" sid="238162403352748" type="Enemy">
+                    <param id="0" name="Speed">Enemy.Speed</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="1107749577380155" type="Enemy">
+                    <param id="0" name="X">Tree.X</param>
+                    <param id="1" name="Y">Tree.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6059218092849619">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2819009826959868" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite2</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="1987895756823191" type="Sprite">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="5186915274746295" type="Sprite">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">200</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="6798202426260016" type="Sprite2">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">200</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7349714935036949" type="Upgrade">
+                    <param id="0" name="Pin to">Sprite</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2645798229657566">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6806761793585498" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite2</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="4816739201517355" type="Sprite">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="9835759509249034" type="Sprite">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">-200</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="9949974020140568" type="Sprite2">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">-200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="4012235565578684">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="3857463476222032" type="Sprite">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">0</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="6882935132935264" type="Sprite">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">-Sprite.Height</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="7863981327204952" type="Sprite">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">0</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="9547636682222519" type="Sprite2">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4901185380700623">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4642735619233538" type="System">
+                    <param id="0" name="Interval (seconds)">Spawn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8419992927121632" type="System">
+                    <param id="0" name="Object to create">Tree</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(525,925)</param>
+                    <param id="3" name="Y">random(500,700)</param>
+                </action>
+                <action id="5" name="Set frame" sid="4188263641501192" type="Tree">
+                    <param id="0" name="Frame number">random(4)</param>
+                </action>
+                <action id="-7" name="Set size" sid="2392581675482053" type="Tree">
+                    <param id="0" name="Width">Tree.Width*HeightTrees</param>
+                    <param id="1" name="Height">Tree.Height*HeightTrees</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4545318931138244">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2122924110917125" type="Tree">
+                    <param id="0" name="Object">Tree</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7213579171222078" type="Tree">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">Tree.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-29" name="Move to object" sid="6861837078747017" type="Tree">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Object">Tree</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9058973301047919">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4251366592333462" type="Tree">
+                    <param id="0" name="Object">Tree</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="8899223109140549" type="Tree">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">Tree.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-29" name="Move to object" sid="7454973348845361" type="Tree">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">Tree</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
