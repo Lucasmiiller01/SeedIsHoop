@@ -134,76 +134,76 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Lenhador" pingpong="0" repeatcount="0" repeatto="0" sid="5321933238062143" speed="5">
-                    <frame duration="1" hotspotX="2.61345" hotspotY="0.491667" original-source="E:\Download\Woodcutter-walk (2).png">
+                    <frame duration="1" hotspotX="0.432203" hotspotY="0.491525" original-source="E:\Download\Woodcutter-walk.png">
                         <collision-poly>
-                            <point x="1" y="0.135979" />
-                            <point x="1" y="0.0680278" />
-                            <point x="1" y="0.220917" />
-                            <point x="1" y="0.526695" />
-                            <point x="1" y="0.798497" />
+                            <point x="1" y="0.153313" />
+                            <point x="1" y="0.0885979" />
+                            <point x="1" y="0.234207" />
+                            <point x="1" y="0.525424" />
+                            <point x="1" y="0.784283" />
                             <point x="1" y="1" />
-                            <point x="1" y="0.900424" />
-                            <point x="0" y="0.526695" />
+                            <point x="1" y="0.881356" />
+                            <point x="0" y="0.525424" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="2.03361" hotspotY="0.5" original-source="E:\Download\Woodcutter-walk (2).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Lenhador\LW2.png">
                         <collision-poly>
-                            <point x="0" y="0.151515" />
-                            <point x="1" y="0.0909091" />
-                            <point x="1" y="0.242424" />
-                            <point x="1" y="0.5" />
-                            <point x="1" y="0.727273" />
-                            <point x="1" y="1" />
-                            <point x="0.400278" y="0.787879" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.733333" y="0.242424" />
+                            <point x="0.816667" y="0.5" />
+                            <point x="0.7" y="0.727273" />
+                            <point x="0.5" y="1" />
+                            <point x="0.233333" y="0.787879" />
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="1.01695" hotspotY="0.512195" original-source="E:\Download\Woodcutter-walk (2).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Lenhador\LW3.png">
                         <collision-poly>
-                            <point x="0" y="0.15521" />
-                            <point x="1" y="0.0931264" />
-                            <point x="1" y="0.248337" />
-                            <point x="1" y="0.512195" />
-                            <point x="1" y="0.760532" />
-                            <point x="1" y="0.86918" />
-                            <point x="0" y="0.822616" />
-                            <point x="0" y="0.512195" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.733333" y="0.242424" />
+                            <point x="0.866667" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.848485" />
+                            <point x="0.216667" y="0.80303" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.0245902" hotspotY="0.504" original-source="E:\Download\Woodcutter-walk (2).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Lenhador\LW4.png">
                         <collision-poly>
-                            <point x="0" y="0.152727" />
-                            <point x="0.0204918" y="0.0916364" />
-                            <point x="1" y="0.229091" />
-                            <point x="1" y="0.504" />
-                            <point x="1" y="0.748363" />
-                            <point x="0.0204918" y="0.977455" />
-                            <point x="0" y="0.778909" />
-                            <point x="0" y="0.504" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.833333" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.25" y="0.772727" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="-0.967213" hotspotY="0.508065" original-source="E:\Download\Woodcutter-walk (2).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Lenhador\LW5.png">
                         <collision-poly>
-                            <point x="0" y="0.138563" />
-                            <point x="0" y="0.0769795" />
-                            <point x="0.526639" y="0.230939" />
-                            <point x="1" y="0.508065" />
-                            <point x="0.328007" y="0.754399" />
-                            <point x="0" y="0.86217" />
-                            <point x="0" y="0.800587" />
-                            <point x="0" y="0.508065" />
+                            <point x="0.15" y="0.136364" />
+                            <point x="0.5" y="0.0757576" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.85" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.848485" />
+                            <point x="0.233333" y="0.787879" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="-1.94309" hotspotY="0.487805" original-source="E:\Download\Woodcutter-walk (2).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Lenhador\LW6.png">
                         <collision-poly>
-                            <point x="0" y="0.13082" />
-                            <point x="0" y="0.0687362" />
-                            <point x="0" y="0.208426" />
-                            <point x="0.326692" y="0.487805" />
-                            <point x="0" y="0.782705" />
-                            <point x="0" y="0.968958" />
-                            <point x="0" y="0.767184" />
-                            <point x="0" y="0.487805" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.883333" y="0.5" />
+                            <point x="0.766667" y="0.787879" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.25" y="0.772727" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -246,67 +246,67 @@
                     </frame>
                 </animation>
                 <animation framecount="6" loop="1" name="Incendiario" pingpong="0" repeatcount="1" repeatto="0" sid="8258002898444093" speed="5">
-                    <frame duration="1" hotspotX="3.875" hotspotY="0.514286" original-source="E:\Download\Incendiary-Walk.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="1" y="0.141125" />
-                            <point x="1" y="0.0770563" />
-                            <point x="1" y="0.221212" />
-                            <point x="1" y="0.509524" />
-                            <point x="1" y="0.765801" />
-                            <point x="1" y="1" />
-                            <point x="1" y="0.861904" />
-                            <point x="0" y="0.509524" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="2.44211" hotspotY="0.504587" original-source="E:\Download\Incendiary-Walk.png">
-                        <collision-poly>
-                            <point x="0.0491252" y="0.154295" />
-                            <point x="1" y="0.0925772" />
-                            <point x="1" y="0.246872" />
-                            <point x="1" y="0.509174" />
-                            <point x="1" y="0.740617" />
-                            <point x="1" y="1" />
-                            <point x="0.527717" y="0.802336" />
-                            <point x="0" y="0.509174" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="1.13861" hotspotY="0.5" original-source="E:\Download\Incendiary-Walk.png">
-                        <collision-poly>
-                            <point x="0" y="0.143801" />
-                            <point x="1" y="0.0826446" />
-                            <point x="1" y="0.235537" />
-                            <point x="1" y="0.495455" />
-                            <point x="1" y="0.740082" />
-                            <point x="1" y="0.847108" />
-                            <point x="0" y="0.801239" />
-                            <point x="0" y="0.495455" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="-0.0196078" hotspotY="0.5" original-source="E:\Download\Incendiary-Walk.png">
-                        <collision-poly>
-                            <point x="0" y="0.13036" />
-                            <point x="0" y="0.0668954" />
-                            <point x="1" y="0.209692" />
-                            <point x="1" y="0.495283" />
-                            <point x="1" y="0.749142" />
-                            <point x="0" y="0.987136" />
-                            <point x="0" y="0.780874" />
-                            <point x="0" y="0.495283" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="-1.09434" hotspotY="0.504505" original-source="E:\Download\Incendiary-Walk.png">
-                        <collision-poly>
-                            <point x="0" y="0.151515" />
-                            <point x="0" y="0.0909091" />
-                            <point x="0.514151" y="0.227273" />
-                            <point x="1" y="0.5" />
-                            <point x="0.621386" y="0.787879" />
-                            <point x="0" y="0.969697" />
-                            <point x="0" y="0.772727" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.766667" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="1" />
+                            <point x="0.183333" y="0.833333" />
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Download\Incendiary-Walk.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.733333" y="0.242424" />
+                            <point x="0.816667" y="0.5" />
+                            <point x="0.7" y="0.727273" />
+                            <point x="0.5" y="1" />
+                            <point x="0.233333" y="0.787879" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.733333" y="0.242424" />
+                            <point x="0.866667" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.848485" />
+                            <point x="0.216667" y="0.80303" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.833333" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.25" y="0.772727" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.883333" y="0.5" />
+                            <point x="0.766667" y="0.787879" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.25" y="0.772727" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.166667" y="0.151515" />
                             <point x="0.5" y="0.0909091" />
@@ -357,40 +357,52 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="3" loop="1" name="Trator" pingpong="0" repeatcount="1" repeatto="0" sid="7533296029686667" speed="5">
-                    <frame duration="1" hotspotX="1.51639" hotspotY="0.508197" original-source="E:\Download\HellAngeir-Motor.png">
+                <animation framecount="4" loop="1" name="Trator" pingpong="0" repeatcount="1" repeatto="0" sid="7533296029686667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Trator\TW1.png">
                         <collision-poly>
-                            <point x="0.496586" y="0.152757" />
-                            <point x="1" y="0.0916543" />
-                            <point x="1" y="0.229136" />
-                            <point x="1" y="0.504098" />
-                            <point x="1" y="0.748509" />
-                            <point x="1" y="1" />
-                            <point x="0.547472" y="0.840164" />
-                            <point x="0" y="0.504098" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.766667" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="1" />
+                            <point x="0.183333" y="0.833333" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.511811" hotspotY="0.5" original-source="E:\Download\HellAngeir-Motor.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Trator\TW2.png">
                         <collision-poly>
-                            <point x="0" y="0.14456" />
-                            <point x="0.509843" y="0.0834575" />
-                            <point x="1" y="0.236214" />
-                            <point x="1" y="0.495902" />
-                            <point x="1" y="0.725038" />
-                            <point x="0.509843" y="1" />
-                            <point x="0" y="0.78614" />
-                            <point x="0" y="0.495902" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.733333" y="0.242424" />
+                            <point x="0.816667" y="0.5" />
+                            <point x="0.7" y="0.727273" />
+                            <point x="0.5" y="1" />
+                            <point x="0.233333" y="0.787879" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="-0.493927" hotspotY="0.504065" original-source="E:\Download\HellAngeir-Motor.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Trator\TW3.png">
                         <collision-poly>
-                            <point x="0" y="0.151515" />
-                            <point x="0" y="0.0909091" />
-                            <point x="0.211875" y="0.242424" />
-                            <point x="0.614036" y="0.5" />
-                            <point x="0.161607" y="0.742424" />
-                            <point x="0" y="0.848485" />
-                            <point x="0" y="0.80303" />
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.733333" y="0.242424" />
+                            <point x="0.866667" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.848485" />
+                            <point x="0.216667" y="0.80303" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projetos\Sprites test\Trator\TW4.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.151515" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="0.75" y="0.227273" />
+                            <point x="0.833333" y="0.5" />
+                            <point x="0.716667" y="0.742424" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.25" y="0.772727" />
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
