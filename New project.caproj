@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>31kyz6p0p8opa</unique-id>
+    <saved-with-version>19500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1440</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="4999165421502044">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Emanuel.Umbelino\Pictures\SeedIsHope\Textures\Trees.png" />
+        </object-type>
+        <object-type name="Tree" sid="7903846341444065">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Life" sid="8924908737722704" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1000534193978651" speed="5">
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.409396" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="3904511430911784">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse" sid="9341864804781817">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Enemy" sid="8834761270695444">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Life" sid="4185340745523868" type="number" />
+                <instance-variable name="Damage" sid="6867619198561341" type="number" />
+                <instance-variable name="InTree" sid="3316734836057299" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="6200640966054315">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="4033191051887827">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751002089814688" speed="5">
+                    <frame duration="1" hotspotX="-0.251572" hotspotY="0.402367" />
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.502959" />
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.502959" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="4399612047232149">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="LAgo" sid="4279933594051501">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7116133808718588" speed="5">
+                    <frame duration="1" hotspotX="0.428571" hotspotY="0.390374" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="559791309999599">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score" sid="5846484473533799">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="3">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
